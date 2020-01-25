@@ -155,6 +155,7 @@ p {
 .container {
   width: 800px;
   margin: 0 auto;
+  border: 1px solid white;
 }
 .topnav {
   display: flex;
@@ -194,6 +195,27 @@ p {
   border-bottom: 1px dashed black;
   padding: 2%;
 }
+.contact-top {
+  border-bottom: 1px dashed black;
+  padding: 2%;
+}
+.contact-form {
+  display: flex;
+  width: 75%;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.contact-form div {
+  width: 100%;
+  margin: 0 2%;
+  /* border: 1px solid black; */
+}
+.contact-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
 .about-middle {
   margin-bottom: 20px;
   display: flex;
@@ -209,15 +231,15 @@ p {
 .about-middle img {
   margin-bottom: 2%;
 }
-.about-middle button {
+button {
   padding: 10px 25px;
-  background: none;
+  background: white;
   border: 2px solid black;
   border-radius: 10px;
   margin-top: 20px;
   font-weight: bold;
 }
-.about-middle button:hover {
+button:hover {
   background: black;
   color: white;
   cursor: pointer;
@@ -311,4 +333,10 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 800px;
+  margin: 0 auto;
 }
